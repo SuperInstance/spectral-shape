@@ -1,0 +1,28 @@
+[package]
+name = "spectral-shape"
+version = "0.1.0"
+edition = "2024"
+description = "Spectral methods for shape analysis of agent behavior distributions"
+license = "MIT"
+repository = "https://github.com/SuperInstance/spectral-shape"
+keywords = ["spectral", "graph", "laplacian", "embedding", "agent"]
+categories = ["mathematics", "science"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+
+[[example]]
+name = "spectral_embedding"
+path = "examples/spectral_embedding.rs"
+
+[[example]]
+name = "heat_kernel_signatures"
+path = "examples/heat_kernel_signatures.rs"
+
+[[example]]
+name = "shape_distance"
+path = "examples/shape_distance.rs"
+
+[[example]]
+name = "scale_space_analysis"
+path = "examples/scale_space_analysis.rs"
